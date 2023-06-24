@@ -12,6 +12,20 @@
   font-family: "Black Ops One", cursive;
 }
 
+.av-textarea {
+  height: 10rem !important;
+}
+
+footer a {
+  color: #000;
+}
+footer .nav-link .active {
+  color: #fff;
+}
+footer .nav-link {
+  color: #000;
+}
+
 @media (min-width: 768px) {
   .av-news-input {
     width: 50%;
