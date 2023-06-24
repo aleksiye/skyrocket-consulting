@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 #hero-carousel img {
   filter: brightness(0.5);
 }
@@ -5,6 +6,10 @@
 .av-logo {
   max-height: 3rem;
   width: auto;
+}
+
+.av-logo-text {
+  font-family: "Black Ops One", cursive;
 }
 
 @media (min-width: 768px) {

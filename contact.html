@@ -57,12 +57,13 @@
     </div>
 
     <!--bootstrap navigation-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="primary menu">
       <div class="container">
         <a class="navbar-brand" href="index.html"
           ><img
-            src="assets/img/logo.png"
-            alt="Logo, image of rocket"
+            src="assets/img/logo-small.jpg"
+            alt="Skyrocket Consulting Logo"
+            class="av-logo"
           />&nbsp;Skyrocket consulting</a
         >
         <button
@@ -79,15 +80,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a
+                class="btn btn-warning nav-link active"
+                href="contact.html"
+                aria-current="page"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -202,12 +206,77 @@
       </div>
     </div>
 
-    <footer class="p-5 bg-dark-subtle text-center position-relative">
+    <footer class="p-5 bg-dark-subtle position-relative">
       <div class="container">
-        <p class="lead">Copyright&copy; 2023 Aleksije Vukic</p>
-        <a href="#" class="position-absolute bottom-0 end-0 p-5"
-          ><i class="bi bi-arrow-up-circle h1"></i
-        ></a>
+        <div class="row gap-5">
+          <div class="col">
+            <img src="assets/img/logo-small.jpg" alt="logo" />
+            <p class="h3 fw-bolder mt-3">Skyrocket consulting</p>
+            <p>
+              We offer a results-driven approach, custom-tailored strategies,
+              and low upfront costs, empowering small businesses to connect with
+              more customers and thrive in the ever-changing landscape of
+              digital marketing.
+            </p>
+          </div>
+          <div class="col text-center">
+            <p class="h3 fw-bold">Browse</p>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link w-50 mx-auto active" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="author.html">Author</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="row">
+              <p class="h3 fw-bold">Contact</p>
+              <p>
+                <a
+                  href="https://goo.gl/maps/G5zDTTSqC7qGJnXUA"
+                  class="link link-underline link-underline-opacity-0"
+                  ><i class="bi bi-geo-alt-fill"></i>Zdravka Celara 16,
+                  Belgrade, Serbia</a
+                >
+              </p>
+              <p>
+                <a
+                  href="mailto:office@skyrocket-consulting.com?subject=General Inquiries"
+                  class="link link-underline link-underline-opacity-0"
+                  ><i class="bi bi-envelope-at-fill">
+                    Email us at office@skyrocket-consulting.com</i
+                  ></a
+                >
+              </p>
+              <p>
+                <a
+                  href="tel:+12345678989"
+                  class="link link-underline link-underline-opacity-0"
+                  ><i class="bi bi-telephone-fill">
+                    Give as a call at +1 234 567 89 89</i
+                  ></a
+                >
+              </p>
+            </div>
+            <div class="row">
+              <p class="lead">
+                Copyright &copy; Aleksije Vukic, All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script
