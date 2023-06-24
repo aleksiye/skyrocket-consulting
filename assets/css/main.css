@@ -1,5 +1,10 @@
 #hero-carousel img {
-  filter: brightness(0.7);
+  filter: brightness(0.5);
+}
+
+.av-logo {
+  max-height: 3rem;
+  width: auto;
 }
 
 @media (min-width: 768px) {

@@ -22,14 +22,46 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title h1" id="exampleModalLabel">Modal title</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--bootstrap navigation-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html"
-          ><img
-            src="assets/img/logo.png"
-            alt="Logo, image of rocket"
-          />&nbsp;Skyrocket consulting</a
+          ><img class="av-logo" src="assets/img/logo-small.jpg" alt="Logo" />
+          <span> Skyrocket Consulting</span></a
         >
         <button
           class="navbar-toggler"
@@ -48,10 +80,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -88,10 +120,17 @@
             class="d-block w-100 av-c-image"
             alt="Space shuttle launch"
           />
-          <div class="carousel-caption d-none d-md-block">
-            <p>Ignite your growth in the digital realm</p>
-            <h1>Skyrocket Consulting</h1>
-            <button class="btn btn-primary">Learn more</button>
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <p class="lead">Ignite your growth in the digital realm</p>
+            <h1 class="display-1">Skyrocket Consulting</h1>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Launch demo modal
+            </button>
           </div>
         </div>
         <div class="carousel-item av-c-item">
@@ -312,10 +351,72 @@
         </div>
       </div>
     </main>
-    <footer class="p-5 bg-dark-subtle text-center position-relative">
+    <footer class="p-5 bg-dark-subtle position-relative">
       <div class="container">
-        <p class="lead">Copyright&copy; 2023 Aleksije Vukic</p>
-        <a href="#" class="position-absolute bottom-0 end-0 p-5"><i class="bi bi-arrow-up-circle h1"></i></a>
+        <div class="row gap-5">
+          <div class="col">
+            <img src="assets/img/logo-small.jpg" alt="logo" />
+            <p class="h3 fw-bolder mt-3">Skyrocket consulting</p>
+            <p>
+              We offer a results-driven approach, custom-tailored strategies,
+              and low upfront costs, empowering small businesses to connect with
+              more customers and thrive in the ever-changing landscape of
+              digital marketing.
+            </p>
+          </div>
+          <div class="col text-center">
+            <p class="h3 fw-bold">Browse</p>
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item w-50 mx-auto">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Author</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="row">
+              <p class="h3 fw-bold">Contact</p>
+            <p>
+              <a href="https://goo.gl/maps/G5zDTTSqC7qGJnXUA"
+                class="link link-underline link-underline-opacity-0"
+                ><i class="bi bi-geo-alt-fill"></i>Zdravka Celara 16, Belgrade,
+                Serbia</a
+              >
+            </p>
+            <p>
+              <a
+                href="mailto:office@skyrocket-consulting.com?subject=General Inquiries"
+                class="link link-underline link-underline-opacity-0"
+                ><i class="bi bi-envelope-at-fill">
+                  Email us at office@skyrocket-consulting.com</i
+                ></a
+              >
+            </p>
+            <p>
+              <a
+                href="tel:+12345678989"
+                class="link link-underline link-underline-opacity-0"
+                ><i class="bi bi-telephone-fill">
+                  Give as a call at +1 234 567 89 89</i
+                ></a
+              >
+            </p>
+            </div>
+            <div class="row">
+              <p class="lead">Copyright &copy; Aleksije Vukic, All rights reserved</p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script
