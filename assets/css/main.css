@@ -1,3 +1,7 @@
+#hero-carousel img {
+  filter: brightness(0.7);
+}
+
 @media (min-width: 768px) {
   .av-news-input {
     width: 50%;
