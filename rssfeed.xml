@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Skyrocket Consulting</title>
+        <link>https://aleksiye.github.io/skyrocket-consulting/</link>
+        <description>Ignite your growth in the digital realm</description>
+        <item>
+            <title>DevBlog verA0.01</title>
+            <link>https://aleksiye.github.io/skyrocket-consulting/index.html</link>
+            <description>Bunch of fixes,fixed footer, and added contact
+                24th June 2023, ~11:59PM</description>
+        </item>
+        <item>
+            <title>DevBlog verA0.02</title>
+            <link>https://aleksiye.github.io/aleksiye/pricing.html</link>
+            <description>Added a pricing page</description>
+        </item>
+    </channel>
+</rss>
