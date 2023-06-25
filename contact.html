@@ -26,6 +26,81 @@
     <link rel="stylesheet" type="text/css" href="assets/css/min.css" />
   </head>
   <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="ctaModal"
+      tabindex="-1"
+      aria-labelledby="ctaModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title h2" id="ctaModalLabel">
+              You're one step away from <span class="text-warning">igniting</span> your growth!
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="modalForm" class="row g-3">
+              <div class="col-md-6">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputSurname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="inputSurname" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="youremail@emailprovider.com"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPhone" class="form-label">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputPhone"
+                  pattern="^\+(?:[0-9] ?){6,14}[0-9]$"
+                  placeholder="+1 (234) 567 89 89"
+                />
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control av-textarea"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" class="btn btn-primary" form="modalForm">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--bootstrap navigation-->
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary"
@@ -60,11 +135,21 @@
             </li>
             <li class="nav-item">
               <a
-                class="btn btn-warning nav-link active"
+                class="btn btn-warning active mb-2 mb-lg-0"
                 href="contact.html"
                 aria-current="page"
                 >Contact</a
               >
+            </li>
+            <li class="nav-item ms-lg-2">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-toggle="modal"
+                data-bs-target="#ctaModal"
+              >
+                Launch now!
+              </button>
             </li>
           </ul>
         </div>
