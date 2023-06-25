@@ -22,6 +22,11 @@
   text-align: left;
 }
 
+.nav-pills .active {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
 footer a {
   color: #000;
 }
