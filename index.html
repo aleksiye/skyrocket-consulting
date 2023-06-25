@@ -44,7 +44,8 @@
         <div class="modal-content">
           <div class="modal-header">
             <p class="modal-title h2" id="ctaModalLabel">
-              You're one step away from <span class="text-warning">igniting</span> your growth!
+              You're one step away from
+              <span class="text-warning">igniting</span> your growth!
             </p>
             <button
               type="button"
@@ -54,7 +55,12 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form id="modalForm" action="submit.php" method="post" class="row g-3">
+            <form
+              id="modalForm"
+              action="submit.php"
+              method="post"
+              class="row g-3"
+            >
               <div class="col-md-6">
                 <label for="inputName" class="form-label">Name</label>
                 <input type="text" class="form-control" id="inputName" />
@@ -102,7 +108,9 @@
             >
               Close
             </button>
-            <button type="submit" class="btn btn-primary" form="modalForm">Submit</button>
+            <button type="submit" class="btn btn-primary" form="modalForm">
+              Submit
+            </button>
           </div>
         </div>
       </div>
@@ -288,21 +296,27 @@
     <!--Newsletter-->
     <div class="bg-primary text-light p-5">
       <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <p class="h3 mb-3 mb-md-0">Sign up for our Newsletter</p>
-          <div class="input-group av-news-input">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="youremail@emailprovider.com"
-              aria-label="Recipient's email"
-              aria-describedby="submit-email"
-            />
-            <button class="btn btn-dark btn-lg" type="button" id="submit-email">
-              Sign up
-            </button>
+        <form id="newsletterForm" action="newsletter.php" method="post">
+          <div class="d-md-flex justify-content-between align-items-center">
+            <p class="h3 mb-3 mb-md-0">Sign up for our Newsletter</p>
+            <div class="input-group av-news-input">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="youremail@emailprovider.com"
+                aria-label="Recipient's email"
+                aria-describedby="submit-email"
+              />
+              <button
+                class="btn btn-dark btn-lg"
+                type="submit"
+                id="submit-email"
+              >
+                Sign up
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <main>
