@@ -3,3 +3,11 @@
         width: 50%;
     }
 }
+@media (max-width: 372px){
+    .av-d-none{
+        display: none;
+    }
+    .av-margin-fix{
+        margin-top: 1rem !important;
+    }
+}
